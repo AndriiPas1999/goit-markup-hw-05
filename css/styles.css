@@ -703,7 +703,7 @@ footer {
 /* 
    transform: scale(1); */
    /* opacity: 1; */
-   transition: transform 2s var(--cubic); 
+   transition: transform 250ms var(--cubic); 
 }
 
 .modal-close {
