@@ -343,10 +343,6 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.uppercase-text{
-
-}
-
 /* "Our advantages" styles */
 .advantages-title {
    color: var(--title-text-color);
