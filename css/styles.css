@@ -71,7 +71,7 @@ body {
 
 
 /* Header styles */
-header {
+.header {
    border-bottom: 1px solid #ECECEC;
 }
 
@@ -83,6 +83,9 @@ header {
 /* Logo styles */
 .logo {
    text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
    font-family: 'Raleway';
    font-weight: 700;
@@ -154,6 +157,7 @@ header {
    content: '';
    width: 100%;
    height: 4px;
+   padding-top: 1px;
 
    border-radius: 2px;
    background-color: var(--accent-color);
@@ -309,8 +313,37 @@ header {
    display: flex;
 }
 
+.we-do-box{
+   position: relative;
+   display: inline-block;
+}
+
 .we-do-item:nth-child(-n+2) {
    margin-right: 30px;
+}
+
+.overlay-text {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 70px;
+   background: rgba(47, 48, 58, 0.8);
+}
+.uppercase-text{
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.uppercase-text{
 
 }
 
@@ -502,7 +535,8 @@ header {
    padding: 6px 22px;
 
    transition: color 250ms var(--cubic),
-      background-color 250ms var(--cubic);
+      background-color 250ms var(--cubic),
+      box-shadow 250ms var(--cubic);
 }
 
 
@@ -528,7 +562,6 @@ header {
    position: relative;
    box-sizing: border-box;
    background-color: #FFFFFF;
-   border: 1px solid #EEEEEE;
    flex-basis: calc((100% - 2 * 30px)/3);
 }
 
@@ -569,6 +602,7 @@ header {
 
 .example-text {
    padding: 20px 25px;
+   border: 1px solid #EEEEEE;
 }
 
 .works-list {
@@ -622,14 +656,7 @@ footer {
 }
 
 .social-title {
-   color: var(--primary-background-color);
    margin-bottom: 20px;
-
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 16px;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
 }
 
 .footer .social-link {
@@ -696,14 +723,14 @@ footer {
    height: 581px;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%) scale(1) ;
+   transform: translate(-50%, -50%) scale(1);
    background-color: #FFFFFF;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
-/* 
+   /* 
    transform: scale(1); */
    /* opacity: 1; */
-   transition: transform 250ms var(--cubic); 
+   transition: transform 250ms var(--cubic);
 }
 
 .modal-close {

@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="hero-wrapper">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button" class="hero-button modal-button" data-modal-open >Замовити послугу</button>
+                    <button type="button" class="hero-button modal-button" data-modal-open>Замовити послугу</button>
                 </div>
             </div>
         </section>
@@ -108,12 +108,31 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="we-do list">
-                    <li class="we-do-item"><img class="we-do-img" src="./images/box1.jpg" alt="Creating" width="370"
-                            height="300"> </li>
-                    <li class="we-do-item"><img class="we-do-img" src="./images/box2.jpg" alt="Testing" width="370"
-                            height="300"> </li>
-                    <li class="we-do-item"><img class="we-do-img" src="./images/box3.jpg" alt="Making the best design"
-                            width="370" height="300"> </li>
+                    <li class="we-do-item">
+                        <div class="we-do-box">
+                            <img class="we-do-img" src="./images/box1.jpg" alt="Creating" width="370" height="300">
+                            <div class="overlay-text">
+                                <p class="uppercase-text">Десктопні додатки></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="we-do-item">
+                        <div class="we-do-box">
+                            <img class="we-do-img" src="./images/box2.jpg" alt="Testing" width="370" height="300">
+                            <div class="overlay-text">
+                                <p class="uppercase-text">Мобільні додатки></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="we-do-item">
+                        <div class="we-do-box">
+                            <img class="we-do-img" src="./images/box3.jpg" alt="Making the best design" width="370"
+                                height="300">
+                            <div class="overlay-text">
+                                <p class="uppercase-text">Дизайнерські рішення></p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -275,7 +294,7 @@
                 </address>
             </div>
             <div class="footer-social">
-                <h3 class="social-title">Приєднуйтесь</h3>
+                <h3 class="social-title uppercase-text">Приєднуйтесь</h3>
                 <ul class="footer social-list">
                     <li><a class="social-link" href="#"><svg width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
@@ -294,12 +313,12 @@
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal" data-modal>
+        <div class="modal">
             <button class="modal-close" data-modal-close>
-            <svg class="close-icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-close-modal"></use>
-            </svg>
-        </button>
+                <svg class="close-icon" width="11" height="11">
+                    <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+            </button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
